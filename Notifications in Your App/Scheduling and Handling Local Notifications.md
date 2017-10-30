@@ -43,5 +43,5 @@ content.sound = [UNNotificationSound soundNamed:@"MySound.aiff"];
 
 #### Handling Notifications When Your App Is in the Foreground
 
-app在前台时，默认收到通知无声音。如果想做额外的处理，可以实现UNUserNotificationCenter的代理的[userNotificationCenter:willPresentNotification:withCompletionHandler:](https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate/1649518-usernotificationcenter)
+app在前台时，默认收到通知无声音。如果想做额外的处理，可以实现`UNUserNotificationCenter`的代理的[userNotificationCenter:willPresentNotification:withCompletionHandler:](https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate/1649518-usernotificationcenter)
 
