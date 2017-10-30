@@ -15,5 +15,16 @@ service extensions可以实现：
 
 在\[UNNotificationServiceExtension didReceiveNotificationRequest:withContentHandler:\]中如果不及时调用handler，系统将展示原始的通知
 
+为了支持修改通知内容，服务器端创建远程通知时需要：
+
+* mutable-content设为1
+
+* 包含一个alert字典，字典中需要制定alert的title和body
+
+## Presenting Notifications Using a Custom Interface on iOS
+
+notification content app extension支持特定分类的本地和远程通知  
+
+
 
 
