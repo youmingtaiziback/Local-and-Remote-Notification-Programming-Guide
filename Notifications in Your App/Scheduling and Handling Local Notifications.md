@@ -80,5 +80,15 @@ Listing 3-5 Handling a custom notification action
 }
 ```
 
+#### Handling the Standard System Actions
+
+系统动作被触发时，[`userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:`](https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate/1649501-usernotificationcenter)会被调用，response会包含以下action identifiers中的一种：
+
+* [UNNotificationDismissActionIdentifier](https://developer.apple.com/documentation/usernotifications/unnotificationdismissactionidentifier)用户取消了通知，没选择自定义动作
+
+* [UNNotificationDefaultActionIdentifier](https://developer.apple.com/documentation/usernotifications/unnotificationdefaultactionidentifier)用户打来了app，没选择自定义动作
+
+  * 
+
 
 
