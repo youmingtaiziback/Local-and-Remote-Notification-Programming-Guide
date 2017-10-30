@@ -42,8 +42,33 @@ app-specific device token是全局唯一，并且标识了app和设备的组合
 * 如果失败，调用`[delegate application:didFailToRegisterForRemoteNotificationsWithError:];`
 
 > device token是变长的
-
+>
 > 如果程序运行时device token改变了，`[delegate application:didRegisterForRemoteNotificationsWithDeviceToken:];`会被调用
+
+Listing 4-1Registering for remote notifications in iOS
+
+```
+- (void)applicationDidFinishLaunching:(UIApplication *)app {
+    // Configure the user interactions first.
+    [self configureUserInteractions];
+ 
+   // Register for remote notifications.
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
+}
+ 
+// Handle remote notification registration.
+- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)devToken {
+    // Forward the token to your provider, using a custom method.
+    [self enableRemoteNotificationFeatures];
+    [self forwardTokenToServer:devTokenBytes];
+}
+ 
+- (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err {
+    // The token is not currently available.
+    NSLog(@"Remote notification support is unavailable due to error: %@", err);
+    [self disableRemoteNotificationFeatures];
+}
+```
 
 
 
