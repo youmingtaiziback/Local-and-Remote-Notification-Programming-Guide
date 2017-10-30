@@ -38,10 +38,12 @@ app-specific device token是全局唯一，并且标识了app和设备的组合
 
 调用`[UIApplication registerForRemoteNotifications];`完成向APNs的注册，返回时：
 
-* 如果成功，调用`[UIApplication application:didRegisterForRemoteNotificationsWithDeviceToken:];`
-* 如果失败，调用`[UIApplication application:didFailToRegisterForRemoteNotificationsWithError:];`
+* 如果成功，调用`[delegate application:didRegisterForRemoteNotificationsWithDeviceToken:];`
+* 如果失败，调用`[delegate application:didFailToRegisterForRemoteNotificationsWithError:];`
 
 > device token是变长的
+
+> 如果程序运行时device token改变了，
 
 
 
