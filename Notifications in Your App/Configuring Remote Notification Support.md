@@ -28,5 +28,11 @@
 
 app-specific device token是全局唯一，并且标识了app和设备的组合
 
-不应该缓存device token，使用时从系统获取
+不应该缓存device token，使用时从系统获取。如果token没有变化，请求很快返回。以下情况会导致token变化：
+
+* 从备份回复设备
+* 在新的设备上安装APP
+* y用户重装系统
+
+
 
