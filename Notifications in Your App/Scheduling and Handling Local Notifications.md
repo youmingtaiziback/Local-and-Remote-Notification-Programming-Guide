@@ -39,5 +39,7 @@ content.sound = [UNNotificationSound soundNamed:@"MySound.aiff"];
 
 ## Responding to the Delivery of Notifications
 
-## 
+为了响应通知，必须实现`UNUserNotificationCenter`的代理方法[UNUserNotificationCenterDelegate](https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate)
+
+
 
