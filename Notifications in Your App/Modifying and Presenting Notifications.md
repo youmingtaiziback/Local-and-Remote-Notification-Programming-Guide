@@ -23,8 +23,5 @@ service extensions可以实现：
 
 ## Presenting Notifications Using a Custom Interface on iOS
 
-notification content app extension支持特定分类的本地和远程通知  
-
-
-
+notification content app extension支持特定分类的本地和远程通知。本地通知通过`categoryIdentifier`指定分类；远程通知中，服务器会向通知中加一个aps字典，aps字典中包换`category`key
 
