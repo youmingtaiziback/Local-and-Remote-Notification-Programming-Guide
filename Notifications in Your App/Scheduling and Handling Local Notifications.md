@@ -70,17 +70,12 @@ Listing 3-5Handling a custom notification action
            withCompletionHandler:(void (^)(void))completionHandler {
     if ([response.notification.request.content.categoryIdentifier isEqualToString:@"TIMER_EXPIRED"]) {
         // Handle the actions for the expired timer.
-        if ([response.actionIdentifier isEqualToString:@"SNOOZE_ACTION"])
-        {
+        if ([response.actionIdentifier isEqualToString:@"SNOOZE_ACTION"]) {
             // Invalidate the old timer and create a new one. . .
-        }
-        else if ([response.actionIdentifier isEqualToString:@"STOP_ACTION"])
-        {
+        } else if ([response.actionIdentifier isEqualToString:@"STOP_ACTION"]) {
             // Invalidate the timer. . .
         }
- 
     }
- 
     // Else handle actions for other notification types. . .
 }
 ```
