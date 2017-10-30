@@ -43,7 +43,9 @@ app-specific device token是全局唯一，并且标识了app和设备的组合
 
 > device token是变长的
 
-> 如果程序运行时device token改变了，
+> 如果程序运行时device token改变了，`[delegate application:didRegisterForRemoteNotificationsWithDeviceToken:];`会被调用
+
+
 
 
 
