@@ -13,5 +13,10 @@
 >
 > iOS设备上，如果用户通过多任务界面强制杀死app，app不会接收远程通知，知道再次打开
 
+## Enabling the Push Notifications Capability
+
+没有entitlements的app审核时会被拒接，测试时向APNs注册时返回错误  
+
+
 
 
