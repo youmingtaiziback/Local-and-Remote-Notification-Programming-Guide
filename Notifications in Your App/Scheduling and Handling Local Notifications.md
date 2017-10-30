@@ -41,5 +41,10 @@ content.sound = [UNNotificationSound soundNamed:@"MySound.aiff"];
 
 为了响应通知，必须实现`UNUserNotificationCenter`的代理方法[UNUserNotificationCenterDelegate](https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate)
 
+#### Handling Notifications When Your App Is in the Foreground
+
+app在前台时，默认收到通知无声音。  
+
+
 
 
