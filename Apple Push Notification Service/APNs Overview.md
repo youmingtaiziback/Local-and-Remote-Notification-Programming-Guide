@@ -6,3 +6,13 @@ server和APNs之间建立持久的、安全的通道
 
 如果发送远程通知时设备开机但没有运行，系统会展示通知。如果设备关机，APNs会稍后重试
 
+## Provider Responsibilities
+
+服务器的职能有：
+
+* 接受token和其他app的数据
+
+## 
+
+
+
