@@ -60,3 +60,5 @@ app在前台时，默认收到通知无声音。如果想做额外的处理，�
 
 当用户点击自定义动作后，系统会通知app。`UNUserNotificationCenter`的代理的[userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:](https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate/1649501-usernotificationcenter)会被调用
 
+如果app没在运行，系统会在后台启动app来处理自定义事件
+
