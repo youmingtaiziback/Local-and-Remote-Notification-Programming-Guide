@@ -17,6 +17,8 @@ server和APNs之间建立持久的、安全的通道
 对于每一个发出去的通知请求：
 
 * 创建一个包含通知内容的JSON字典
+* 把通知内容、token和其他信息添加到HTTP/2请求里面
+* 把HTTP/2请求发送给APNs，其中包括cryptographic credentials
 
 
 
