@@ -36,5 +36,10 @@ app-specific device token是全局唯一，并且标识了app和设备的组合
 
 > device token变化后，app必须重启，APNs才能发送通知
 
+#### Obtaining a Device Token in iOS and tvOS
+
+调用\[UIApplication registerForRemoteNotifications\];完成向APNs的注册  
+
+
 
 
