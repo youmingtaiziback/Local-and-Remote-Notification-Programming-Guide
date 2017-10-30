@@ -72,8 +72,8 @@ Listing 4-1Registering for remote notifications in iOS
 
 如果当前网络不可用，
 
-* application:didRegisterForRemoteNotificationsWithDeviceToken:
-* application:didFailToRegisterForRemoteNotificationsWithError: 
+* `application:didRegisterForRemoteNotificationsWithDeviceToken:`
+* `application:didFailToRegisterForRemoteNotificationsWithError: `
 
 都不会被调用
 
