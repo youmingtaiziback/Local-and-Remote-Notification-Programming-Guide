@@ -15,8 +15,16 @@
 
 ## Enabling the Push Notifications Capability
 
-没有entitlements的app审核时会被拒接，测试时向APNs注册时返回错误  
+没有entitlements的app审核时会被拒接，测试时向APNs注册时返回错误
 
+## Registering to Receive Remote Notifications
+
+每次启动app时，必须和APNs注册，步骤：
+
+* app向APNs注册
+* 成功时APNs向设备放回token
+* 系统通过代理方法向app放回token
+* app把token发送到服务器 
 
 
 
