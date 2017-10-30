@@ -24,7 +24,5 @@ server和APNs之间建立持久的、安全的通道
 
 ## Quality of Service, Store-and-Forward, and Coalesced Notifications
 
-发送通知时，如果设备关机，则在APNs端新的通知会覆盖旧的。
-
-
+发送通知时，如果设备关机，则在APNs端新的通知会覆盖旧的。如果设备长时间不开机，存储在APNs端的所有通知都将被丢弃
 
