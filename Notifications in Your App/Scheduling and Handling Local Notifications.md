@@ -62,7 +62,7 @@ app在前台时，默认收到通知无声音。如果想做额外的处理，�
 
 如果app没在运行，系统会在后台启动app来处理自定义事件
 
-Listing 3-5Handling a custom notification action
+Listing 3-5 Handling a custom notification action
 
 ```
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center
