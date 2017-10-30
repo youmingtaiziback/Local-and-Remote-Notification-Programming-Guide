@@ -24,12 +24,20 @@ UNNotificationRequest* request = [UNNotificationRequest requestWithIdentifier:@"
 ```
 UNNotificationContent *content = [[UNNotificationContent alloc] init];
 // Configure the content. . .
- 
+
 // Assign the category (and the associated actions).
 content.categoryIdentifier = @"TIMER_EXPIRED";
- 
+
 // Create the request and schedule the notification.
 ```
 
+#### Adding a Sound to the Notification Content
 
+```
+content.sound = [UNNotificationSound soundNamed:@"MySound.aiff"];
+```
+
+## Responding to the Delivery of Notifications
+
+## 
 
