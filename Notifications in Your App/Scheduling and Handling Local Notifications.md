@@ -62,3 +62,28 @@ app在前台时，默认收到通知无声音。如果想做额外的处理，�
 
 如果app没在运行，系统会在后台启动app来处理自定义事件
 
+Listing 3-5Handling a custom notification action
+
+```
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center
+           didReceiveNotificationResponse:(UNNotificationResponse *)response
+           withCompletionHandler:(void (^)(void))completionHandler {
+    if ([response.notification.request.content.categoryIdentifier isEqualToString:@"TIMER_EXPIRED"]) {
+        // Handle the actions for the expired timer.
+        if ([response.actionIdentifier isEqualToString:@"SNOOZE_ACTION"])
+        {
+            // Invalidate the old timer and create a new one. . .
+        }
+        else if ([response.actionIdentifier isEqualToString:@"STOP_ACTION"])
+        {
+            // Invalidate the timer. . .
+        }
+ 
+    }
+ 
+    // Else handle actions for other notification types. . .
+}
+```
+
+
+
