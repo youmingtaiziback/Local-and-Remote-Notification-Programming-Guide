@@ -28,3 +28,5 @@
 
 app-specific device token是全局唯一，并且标识了app和设备的组合
 
+不应该缓存device token，使用时从系统获取
+
