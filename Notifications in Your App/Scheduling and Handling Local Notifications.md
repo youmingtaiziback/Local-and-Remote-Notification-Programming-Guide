@@ -48,7 +48,7 @@ app在前台时，默认收到通知无声音。如果想做额外的处理，�
 ```
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center 
        willPresentNotification:(UNNotification *)notification
-        withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler {
+         withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler {
    // Update the app interface directly.
 
     // Play a sound.
