@@ -83,3 +83,10 @@ Listing 4-1Registering for remote notifications in iOS
 
 User Notifications framework为iOS、watchOS和tvOS app提供了统一接口，支持大多数与本地、远程通知相关的任务
 
+* app在前台时，直接接收通知并静音
+* app在后台或者没运行
+  * 响应用户选择的自定义动作
+  * 响应用户取消通知或重启app
+
+
+
