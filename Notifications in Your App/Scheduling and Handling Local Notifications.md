@@ -19,5 +19,17 @@ UNCalendarNotificationTrigger* trigger = [UNCalendarNotificationTrigger triggerW
 UNNotificationRequest* request = [UNNotificationRequest requestWithIdentifier:@"MorningAlarm" content:content trigger:trigger];
 ```
 
+#### Assigning Custom Actions to a Local Notification
+
+```
+UNNotificationContent *content = [[UNNotificationContent alloc] init];
+// Configure the content. . .
+ 
+// Assign the category (and the associated actions).
+content.categoryIdentifier = @"TIMER_EXPIRED";
+ 
+// Create the request and schedule the notification.
+```
+
 
 
