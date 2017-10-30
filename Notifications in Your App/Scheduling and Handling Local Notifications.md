@@ -88,5 +88,20 @@ Listing 3-5 Handling a custom notification action
 
 * [UNNotificationDefaultActionIdentifier](https://developer.apple.com/documentation/usernotifications/unnotificationdefaultactionidentifier)用户打来了app，没选择自定义动作
 
+Listing 3-6Handling the standard system actions
+
+```
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center
+          didReceiveNotificationResponse:(UNNotificationResponse *)response
+          withCompletionHandler:(void (^)(void))completionHandler {
+   if ([response.actionIdentifier isEqualToString:UNNotificationDismissActionIdentifier]) {
+       // The user dismissed the notification without taking action.
+   } else if ([response.actionIdentifier isEqualToString:UNNotificationDefaultActionIdentifier]) {
+       // The user launched the app.
+   }
+   // Else handle any custom actions. . .
+}
+```
+
 
 
