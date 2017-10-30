@@ -20,5 +20,11 @@ server和APNs之间建立持久的、安全的通道
 * 把通知内容、token和其他信息添加到HTTP/2请求里面
 * 把HTTP/2请求发送给APNs，其中包括cryptographic credentials
 
+## Using Multiple Providers
+
+## Quality of Service, Store-and-Forward, and Coalesced Notifications
+
+发送通知时，如果设备关机，则在APNs端新的通知会覆盖旧的。
+
 
 
