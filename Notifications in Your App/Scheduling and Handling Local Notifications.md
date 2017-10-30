@@ -13,8 +13,7 @@ content.body = [NSString localizedUserNotificationStringForKey:@"Rise and shine!
 NSDateComponents* date = [[NSDateComponents alloc] init];
 date.hour = 7;
 date.minute = 0;
-UNCalendarNotificationTrigger* trigger = [UNCalendarNotificationTrigger
-       triggerWithDateMatchingComponents:date repeats:NO];
+UNCalendarNotificationTrigger* trigger = [UNCalendarNotificationTrigger triggerWithDateMatchingComponents:date repeats:NO];
 
 // Create the request object.
 UNNotificationRequest* request = [UNNotificationRequest requestWithIdentifier:@"MorningAlarm" content:content trigger:trigger];
