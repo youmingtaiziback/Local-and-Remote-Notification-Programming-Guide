@@ -77,5 +77,9 @@ Listing 4-1Registering for remote notifications in iOS
 
 都不会被调用
 
+#### Obtaining a Device Token in macOS
 
+## Handling Remote Notifications
+
+User Notifications framework为iOS、watchOS和tvOS app提供了统一接口，支持大多数与本地、远程通知相关的任务
 
