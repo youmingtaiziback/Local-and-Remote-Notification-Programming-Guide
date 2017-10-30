@@ -88,7 +88,5 @@ Listing 3-5 Handling a custom notification action
 
 * [UNNotificationDefaultActionIdentifier](https://developer.apple.com/documentation/usernotifications/unnotificationdefaultactionidentifier)用户打来了app，没选择自定义动作
 
-  * 
-
 
 
