@@ -34,5 +34,7 @@ app-specific device token是全局唯一，并且标识了app和设备的组合
 * 在新的设备上安装APP
 * 用户重装系统
 
+> device token变化后，app必须重启，APNs才能发送通知
+
 
 
