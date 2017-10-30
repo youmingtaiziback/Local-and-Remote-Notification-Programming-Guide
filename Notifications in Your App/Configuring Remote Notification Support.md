@@ -38,8 +38,10 @@ app-specific device token是全局唯一，并且标识了app和设备的组合
 
 #### Obtaining a Device Token in iOS and tvOS
 
-调用\[UIApplication registerForRemoteNotifications\];完成向APNs的注册  
+调用`[UIApplication registerForRemoteNotifications];`完成向APNs的注册，返回时：
 
+* 如果成功，调用`[UIApplication application:didRegisterForRemoteNotificationsWithDeviceToken:];`
+* 如果失败，调用`[UIApplication application:didFailToRegisterForRemoteNotificationsWithError:];`
 
 
 
