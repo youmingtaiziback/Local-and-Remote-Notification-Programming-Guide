@@ -58,7 +58,7 @@ app在前台时，默认收到通知无声音。如果想做额外的处理，�
 
 #### Responding to the Selection of a Custom Action
 
-####  
+当用户点击自定义动作后，系统会通知app。
 
 
 
