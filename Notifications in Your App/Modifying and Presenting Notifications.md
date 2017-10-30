@@ -13,5 +13,7 @@ service extensions可以实现：
 * 改变通知的title或者body
 * 添加进程标识符或者修改通知的[`userInfo`](https://developer.apple.com/documentation/usernotifications/unnotificationcontent/1649869-userinfo)字典
 
+在\[UNNotificationServiceExtension didReceiveNotificationRequest:withContentHandler:\]中如果不及时调用handler，系统将展示原始的通知
+
 
 
