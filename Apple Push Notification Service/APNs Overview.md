@@ -37,5 +37,5 @@ _connection trust_服务器和APNs之间、APNs和app之前都工作
 * 服务器到APNs：服务器端需要遵守苹果的推送通知协议
 * APNs到设备：只有授权的设备才能收到APNs的通知
 
-
+_Device token trust_确保在每一次远程通知过程中，通知从服务器端到达设备端
 
