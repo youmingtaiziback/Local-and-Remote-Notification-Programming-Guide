@@ -28,3 +28,12 @@ server和APNs之间建立持久的、安全的通道
 
 通过在通知请求中添加_collapse identifier_可以实现通知的合并
 
+## Security Architecture
+
+APNs通过两个级别的信任机制实现端到端的加密验证和授权
+
+
+
+  
+
+
