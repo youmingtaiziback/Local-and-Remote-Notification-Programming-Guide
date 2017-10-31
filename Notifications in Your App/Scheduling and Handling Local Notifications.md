@@ -9,6 +9,7 @@
 1. 创建[UNMutableNotificationContent](https://developer.apple.com/documentation/usernotifications/unmutablenotificationcontent)
 2. 创建[`UNCalendarNotificationTrigger`](https://developer.apple.com/documentation/usernotifications/uncalendarnotificationtrigger)、[`UNTimeIntervalNotificationTrigger`](https://developer.apple.com/documentation/usernotifications/untimeintervalnotificationtrigger)或者 [`UNLocationNotificationTrigger`](https://developer.apple.com/documentation/usernotifications/unlocationnotificationtrigger)
 3. 用content和trigger创建[`UNNotificationRequest`](https://developer.apple.com/documentation/usernotifications/unnotificationrequest)
+4. 调用[addNotificationRequest:withCompletionHandler:](https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/1649508-add)
 
 ```
 UNMutableNotificationContent* content = [[UNMutableNotificationContent alloc] init];
