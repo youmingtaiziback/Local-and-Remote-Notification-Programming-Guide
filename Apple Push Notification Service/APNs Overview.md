@@ -30,10 +30,5 @@ server和APNs之间建立持久的、安全的通道
 
 ## Security Architecture
 
-APNs通过两个级别的信任机制实现端到端的加密验证和授权
-
-
-
-  
-
+APNs通过两个级别的信任机制实现端到端的加密验证和授权：_connection trust和device token trust_
 
