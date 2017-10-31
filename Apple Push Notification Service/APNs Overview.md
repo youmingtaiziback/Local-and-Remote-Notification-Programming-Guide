@@ -49,7 +49,7 @@ APNs会更新device token的情况：
 #### Provider-to-APNs Connection Trust
 
 * Token-based provider connection trust：服务器有私钥，通过HTTP/2-based API将公钥发给APNs。以后每发一次通知请求，服务器都要生成JWT _provider authentication tokens。_通过这种方式可以向所有注册的app发送通知
-* Certificate-based provider connection trust：服务器端有苹果签名的_provider certificate and private cryptographic key。_
+* Certificate-based provider connection trust：服务器端有苹果签名的_provider certificate and private cryptographic key。_通过这种方法给一个app发送通知
 
 #### Token-Based Provider-to-APNs Trust
 
