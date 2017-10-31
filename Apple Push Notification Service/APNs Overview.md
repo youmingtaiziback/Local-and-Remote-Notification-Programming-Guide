@@ -65,7 +65,7 @@ APNs会更新device token的情况：
 
 #### APNs-to-Device Connection Trust and Device Tokens
 
-APNs和设备之间的信任自动创建，不需要aoo的参与
+APNs和设备之间的信任自动创建，不需要app的参与
 
 **Figure 6-5 **Establishing connection trust between a device and APNs
 
