@@ -48,25 +48,17 @@ APNs会更新device token的情况：
 
 #### Provider-to-APNs Connection Trust
 
-
+* Token-based provider connection trust：服务器有私钥，通过HTTP/2-based API将公钥发给APNs。以后每发一次通知请求，服务器都要生成JWT _provider authentication tokens_
 
 #### Token-Based Provider-to-APNs Trust
 
-
-
 #### Certificate-Based Provider-to-APNs Trust
-
-
 
 #### APNs-to-Device Connection Trust and Device Tokens
 
-
-
 ## Provisioning Procedures
 
-
-
-##     
+## 
 
 
 
