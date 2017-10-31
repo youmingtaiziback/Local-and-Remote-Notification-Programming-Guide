@@ -39,3 +39,12 @@ _connection trust_服务器和APNs之间、APNs和app之前都工作
 
 _Device token trust_确保在每一次远程通知过程中，通知从服务器端到达设备端
 
+APNs会更新device token的情况：
+
+* 在新的设备上安装app
+* 从备份中恢复设备
+* 重装系统
+* 其他系统事件
+
+
+
