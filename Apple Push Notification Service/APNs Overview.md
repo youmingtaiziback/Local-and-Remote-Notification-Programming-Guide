@@ -53,7 +53,15 @@ APNs会更新device token的情况：
 
 #### Token-Based Provider-to-APNs Trust
 
+**Figure 6-3 **Establishing and using token-based provider connection trust
+
+![](/assets/import1.png)
+
 #### Certificate-Based Provider-to-APNs Trust
+
+**Figure 6-4 **Establishing certificate-based provider connection trust
+
+![](/assets/impor2t.png)
 
 #### APNs-to-Device Connection Trust and Device Tokens
 
