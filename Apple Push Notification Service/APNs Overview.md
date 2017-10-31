@@ -65,6 +65,10 @@ APNs会更新device token的情况：
 
 #### APNs-to-Device Connection Trust and Device Tokens
 
+**Figure 6-5 **Establishing connection trust between a device and APNs
+
+![](/assets/import3.png)
+
 ## Provisioning Procedures
 
 ## 
