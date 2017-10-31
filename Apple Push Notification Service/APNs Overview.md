@@ -46,5 +46,27 @@ APNs会更新device token的情况：
 * 重装系统
 * 其他系统事件
 
+#### Provider-to-APNs Connection Trust
+
+
+
+#### Token-Based Provider-to-APNs Trust
+
+
+
+#### Certificate-Based Provider-to-APNs Trust
+
+
+
+#### APNs-to-Device Connection Trust and Device Tokens
+
+
+
+## Provisioning Procedures
+
+
+
+##     
+
 
 
