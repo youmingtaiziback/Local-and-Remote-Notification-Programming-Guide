@@ -73,7 +73,7 @@ Listing 4-1Registering for remote notifications in iOS
 如果当前网络不可用，
 
 * `application:didRegisterForRemoteNotificationsWithDeviceToken:`
-* `application:didFailToRegisterForRemoteNotificationsWithError: `
+* `application:didFailToRegisterForRemoteNotificationsWithError:`
 
 都不会被调用
 
@@ -86,7 +86,7 @@ User Notifications framework为iOS、watchOS和tvOS app提供了统一接口，�
 * app在前台时，直接接收通知并静音
 * app在后台或者没运行
   * 响应用户选择的自定义动作
-  * 响应用户取消通知或重启app
+  * 响应用户取消通知或启动app
 
 
 
