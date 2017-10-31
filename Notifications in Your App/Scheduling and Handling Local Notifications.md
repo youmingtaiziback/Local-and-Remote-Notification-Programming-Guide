@@ -4,6 +4,12 @@
 
 ## Configuring a Local Notification
 
+创建本地通知的步骤：
+
+1. 创建[UNMutableNotificationContent](https://developer.apple.com/documentation/usernotifications/unmutablenotificationcontent)
+2. 创建[`UNCalendarNotificationTrigger`](https://developer.apple.com/documentation/usernotifications/uncalendarnotificationtrigger)、[`UNTimeIntervalNotificationTrigger`](https://developer.apple.com/documentation/usernotifications/untimeintervalnotificationtrigger)或者 [`UNLocationNotificationTrigger`](https://developer.apple.com/documentation/usernotifications/unlocationnotificationtrigger)
+3. 用content和trigger创建[`UNNotificationRequest`](https://developer.apple.com/documentation/usernotifications/unnotificationrequest)
+
 ```
 UNMutableNotificationContent* content = [[UNMutableNotificationContent alloc] init];
 content.title = [NSString localizedUserNotificationStringForKey:@"Wake up!" arguments:nil];
