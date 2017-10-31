@@ -30,5 +30,11 @@ server和APNs之间建立持久的、安全的通道
 
 ## Security Architecture
 
-APNs通过两个级别的信任机制实现端到端的加密验证和授权：_connection trust和device token trust_
+APNs通过两个级别的信任机制实现端到端的加密验证和授权：_connection trust_和_device token trust_
+
+_connection trust_服务器和APNs之间、APNs和app之前都工作
+
+* 服务器到APNs：服务器端需要遵守苹果的推送通知协议
+
+
 
